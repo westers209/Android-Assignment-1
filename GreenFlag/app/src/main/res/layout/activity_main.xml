@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_greenflag_customers"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/sr_greenflag_customers"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_car_health_updates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_greenflag" />
+
+    <TextView
+        android:id="@+id/tv_request_a_rescue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sr_request"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_policy_information"
+        app:layout_constraintEnd_toEndOf="@+id/tv_greenflag_customers"
+        app:layout_constraintStart_toStartOf="@+id/tv_greenflag_customers"
+        app:layout_constraintTop_toTopOf="@id/tv_car_health_updates" />
+
+    <TextView
+        android:id="@+id/tv_policy_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sr_policy"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_request_a_rescue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_request_a_rescue"
+        app:layout_constraintTop_toBottomOf="@+id/tv_request_a_rescue"
+        app:layout_constraintBottom_toTopOf="@id/button2"/>
+
+    <TextView
+        android:id="@+id/tv_car_health_updates"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/sr_car_health"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_request_a_rescue"
+        app:layout_constraintEnd_toEndOf="@+id/tv_request_a_rescue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_request_a_rescue"
+        app:layout_constraintTop_toBottomOf="@+id/tv_greenflag_customers" />
+
+    <ImageView
+        android:id="@+id/iv_check_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/sr_check"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_car_health_updates"
+        app:layout_constraintEnd_toStartOf="@+id/tv_car_health_updates"
+        app:layout_constraintStart_toStartOf="@+id/tv_greenflag_customers"
+        app:layout_constraintTop_toTopOf="@id/tv_car_health_updates"
+        app:srcCompat="@drawable/tick2x" />
+
+    <ImageView
+        android:id="@+id/iv_check_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/sr_check"
+        app:layout_constraintBottom_toBottomOf="@id/tv_request_a_rescue"
+        app:layout_constraintEnd_toStartOf="@+id/tv_request_a_rescue"
+        app:layout_constraintStart_toStartOf="@+id/tv_greenflag_customers"
+        app:layout_constraintTop_toTopOf="@id/tv_request_a_rescue"
+        app:srcCompat="@drawable/tick2x" />
+
+    <ImageView
+        android:id="@+id/iv_check_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/sr_check"
+        app:layout_constraintBottom_toBottomOf="@id/tv_policy_information"
+        app:layout_constraintEnd_toStartOf="@+id/tv_policy_information"
+        app:layout_constraintStart_toStartOf="@+id/tv_greenflag_customers"
+        app:layout_constraintTop_toTopOf="@id/tv_policy_information"
+        app:srcCompat="@drawable/tick2x" />
+
+    <ImageView
+        android:id="@+id/iv_greenflag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/sr_flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_green_flag2x" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/gradient_button_background2x"
+        android:text="@string/sr_create_account"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
